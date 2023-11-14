@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <title>Rifa de Natal EMEF Santa Corona</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Seção de Sorteio -->
+     <section class="sorteio-form">
+      <div class="form-min-max">
+        <br>
+        <br>
+        <br>
+        <div class="box-resultado">
+          <div>
+            <img src="logo.png" alt="" style="width: 120px; height: 120px;">
+            <br>
+            <h1>Sorteio de Natal 2023</h1>
+          </div>
+          <h1 id="randomNumber">0</h1>
+        </div>
+        <div class="box-inputs">
+          <div class="box-input-min" style="display: none;">
+            <span class="input-min-text" id="min">Min</span>
+            <input type="number" name="num1" id="num1" value=1 class="form-control" placeholder="min" max=2400
+              onfocusout="setMax()">
+          </div>
+          <div class="box-input-max" style="display: none;">
+            <span class="input-max-text" id="max">Max</span>
+            <input type="number" name="num2" id="num2" value=2400 class="form-control" placeholder="min" max=2400
+              onfocusout="setMax()">
+          </div>
+        </div>
+      </div>
+      <div class="bg">
+        <div class="centerer">
+          <button href="#" class="button" onclick="generateRandom()">Sortear Números</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Resultados -->
+    <section class="sorteio-form-resultado">
+      <div class="form-min-max">
+        <br>
+        <br>
+        <br>
+        <div class="box-resultado">
+          <div class="box-numeros-sorteados">
+            <h1 >NUMEROS SORTEADOS</h3>
+    
+            <ol id="sortedNumbersList" class="sorted-numbers-list"></ol>
+            <br>
+            <br>
+          </div>
+        </div>
+        
+      </div>
+
+
+      
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
