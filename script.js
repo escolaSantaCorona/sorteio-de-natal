@@ -149,10 +149,10 @@ function rollNumber(number1, number2) {
 }
 
 function setMax() {
-    if (parseInt(num1.value) > 2400) {
-        num1.value = 2400;
+    if (parseInt(num1.value) > 3000) {
+        num1.value = 3000;
     }
-    if (parseInt(num2.value) > 2400) {
-        num2.value = 2400;
+    if (parseInt(num2.value) > 3000) {
+        num2.value = 3000;
     }
 }
